@@ -6,6 +6,7 @@
     --clr-primary: #fff;
     --clr-secondary: #fbd784;
     --clr-darkgold: #ffa343;
+    --clr-dark: #141414;
 
     --fs-big: 4rem; 
     --fs-medium: 1.5rem;
@@ -22,69 +23,18 @@
     text-decoration: none;
     list-style-type: none;
     font-family: var(--ff-default);
+    /* outline: 1px solid limegreen; */
 }
 
-/* CUSTOM CLASSES */
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container {
-    width: min(100% - 1rem, 1460px);
-    margin: 0 auto;
-}
-
-.wrapper {
-    padding: 64px 84px;
-}
-
-.link {
-    position: relative;
-}
-
-.link::after {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    width: 0;
-    border: 0px solid;
-    transition: .3s;
-}
-
-.link:hover::after {
-    left: 0;
-    width: 100%;
-    border: 1px solid;
-}
-
-.title {
-    position: relative;
-    font-family: var(--ff-primary);
-    font-size: var(--fs-default);
-    color: var(--clr-secondary);
-    line-height: 1.5rem;
-    letter-spacing: 6px;
-    text-transform: uppercase;
-}
-
-.title::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: calc(100% + 24px);
-    transform: translateY(-50%);
-    border: 1px solid;
-    width: 72px;
+body {
+    background-color: var(--clr-dark);
 }
 
 /* main bg styles */
 .hero-bg {
     position: absolute;
-    width: min(100%, 1920px);
-    min-height: 100vh;
+    min-height: 1200px;
+    width: 100%;
     left: 50%;
     transform: translateX(-50%);
 
@@ -128,8 +78,8 @@
     min-height: 600px;
 }
 .hero__wrapper {
+    max-width: 100%;
     flex-direction: column;
-    height: 200px;
     color: var(--clr-primary);
     font-family: var(--ff-primary);
 }
@@ -140,11 +90,30 @@
 
 .hero__heading {
     font-size: calc(var(--fs-big) + 1rem);
-    text-transform: capitalize;
 }
 
 .hero__heading-thin {
     font-family: var(--ff-default);
     font-weight: 100;
     color: var(--clr-secondary);
+}
+
+
+
+
+.holiday__section {
+    background-color: var(--clr-dark);
+    margin: 110px 0;
+}
+
+.holiday__wrapper.grid {
+    grid-template-columns: 1fr 1fr;
+}
+
+.holiday__secondary {
+}
+
+.holiday__secondary img {
+    width: 100%;
+    object-fit: contain;
 }
