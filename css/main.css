@@ -1,0 +1,21 @@
+:root {
+    --ff-default: 'open-sans', sans-serif;
+    --ff-primary: 'open-sans bold', sans-serif;
+    --ff-secondary: 'open-sans semibold', sans-serif;
+
+    --clr-primary: #fff;
+    --clr-secondary: #fbd784;
+    --clr-darkgold: #ffa343;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: var(--ff-default);
+}
