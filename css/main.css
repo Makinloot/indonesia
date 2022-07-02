@@ -8,7 +8,7 @@
     --clr-darkgold: #ffa343;
     --clr-dark: #141414;
 
-    --fs-big: 4rem; 
+    --fs-big: 3rem; 
     --fs-medium: 1.5rem;
     --fs-default: 1rem;
 }
@@ -31,6 +31,9 @@ body {
 }
 
 /* main bg styles */
+.bg-container {
+    overflow: visible;
+}
 .hero-bg {
     position: absolute;
     min-height: 1200px;
@@ -100,20 +103,19 @@ body {
 
 
 
-
+/* holiday section styles */
 .holiday__section {
     background-color: var(--clr-dark);
     margin: 110px 0;
+    box-shadow: 0px 0px 55px 70px #141414;
 }
 
 .holiday__wrapper.grid {
     grid-template-columns: 1fr 1fr;
-}
-
-.holiday__secondary {
+    column-gap: 5%;
 }
 
 .holiday__secondary img {
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
