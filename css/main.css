@@ -76,10 +76,15 @@ body {
     margin: 0;
 }
 
+.burger-menu {
+    display: none;
+}
+
 /* hero section styles */
 .hero__section {
     min-height: 600px;
 }
+
 .hero__wrapper {
     max-width: 100%;
     flex-direction: column;
@@ -114,6 +119,12 @@ body {
     grid-template-columns: 1fr 1fr;
     column-gap: 5%;
 }
+
+.holiday__secondary {
+    position: relative;
+    /* background-color: red; */
+}
+
 
 .holiday__secondary img {
     width: 100%;
