@@ -53,6 +53,12 @@
         max-width: 400px; */
         object-fit: cover;
     }
+
+
+
+    .socials-wrapper {
+        display: none;
+    }
 }
 
 @media (max-width: 480px) {
@@ -99,8 +105,8 @@
 
     /* holiday section */
     .holiday__section {
-        margin: 0;
-        padding: 0;
+        margin: 20px 0 0;
+        /* padding: 50px 0 0; */
     }
 
     .holiday__secondary {
