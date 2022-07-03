@@ -27,6 +27,10 @@
   font-family: var(--ff-default);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--clr-dark);
 }
