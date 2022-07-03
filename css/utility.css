@@ -87,3 +87,7 @@
   line-height: 1.5rem;
   color: var(--clr-secondary);
 }
+
+.read-more:hover {
+  color: var(--clr-darkgold);
+}

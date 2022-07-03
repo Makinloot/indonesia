@@ -38,6 +38,10 @@
     font-size: calc(var(--fs-big) - 1rem);
   }
 
+  hr {
+    display: none;
+  }
+
   /* header styles */
   .hero-bg {
     min-height: 600px;
