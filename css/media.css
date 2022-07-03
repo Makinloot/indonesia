@@ -1,13 +1,20 @@
 @media (max-width: 1024px) {
-    /* holiday section styles */
-    .holiday__wrapper.grid {
+    /* holiday & culture section styles */
+    .holiday__wrapper.grid,
+    .culture__wrapper.grid {
         grid-template-columns: 1fr;
         grid-template-rows: 50% 50%;
     }
 
-    .holiday__secondary img {
+    .holiday__secondary,
+    .culture__secondary {
+        max-width: 580px;
+    }
+
+    .holiday__secondary img,
+    .culture__secondary img {
         max-height: 580px;
-        object-fit: contain;
+        object-fit: cover;
     }
 }
 
@@ -15,6 +22,11 @@
     .wrapper {
         padding: 32px;
     }
+
+    .heading {
+        font-size: calc(var(--fs-big) - 1rem);
+    }
+
     /* header styles */
     .hero-bg {
         min-height: 600px;
@@ -22,6 +34,10 @@
 
     .hero__section {
         min-height: 500px;
+    }
+
+    .socials-wrapper {
+        display: none;
     }
     
     .header__nav {
@@ -32,38 +48,56 @@
         display: flex;
     }
 
-    .heading {
-        font-size: calc(var(--fs-big) - 1rem);
+    .burger-menu img {
+        width: 100%;
     }
 
-    /* holiday section */
-    .holiday__section {
+    /* holiday section & culture section */
+    .holiday__section,
+    .culture__section {
         margin: 0;
         padding: 55px 0;
     }
 
-    .holiday__secondary {
+    .holiday__secondary,
+    .culture__secondary {
         margin: 0 0 40px 0;
         max-height: 400px;
         max-width: 400px;
     }
 
-    .holiday__secondary img {
-        /* max-height: 400px;
-        max-width: 400px; */
+    .culture__secondary {
+        margin: 40px 0 0 0;
+    }
+
+    .holiday__secondary img,
+    .culture__secondary img {
         object-fit: cover;
     }
 
+    /* slider styles */
+    .slider__section {
+        margin: 0;
+        padding: 0;
+    }
 
+    .swiper-slide {
+        height: 680px;
+    }
 
-    .socials-wrapper {
+    .swiper-slide .read-more {
+        margin-bottom: 40px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
         display: none;
     }
 }
 
 @media (max-width: 480px) {
     .wrapper {
-        padding: 32px;
+        padding: 1rem;
     }
 
     .txt {
@@ -74,6 +108,7 @@
 
     .title::before {
         width: 34px;
+        right: calc(100% + 14px);
     }
 
     .heading {
@@ -87,6 +122,7 @@
     }
 
     .hero__section {
+        margin: 0 0 50px 0;
         min-height: 400px;
     }
 
@@ -103,18 +139,34 @@
         white-space: nowrap;
     }
 
-    /* holiday section */
-    .holiday__section {
+    /* holiday & culture section */
+    .holiday__section,
+    .culture__section {
         margin: 20px 0 0;
-        /* padding: 50px 0 0; */
     }
 
-    .holiday__secondary {
+    .holiday__secondary,
+    .culture__secondary {
         margin: 0 0 20px 0;
     }
 
-    .holiday__heading {
+    .culture__primary .title {
+        /* margin: 2rem 0 2rem 96px; */
+        margin: 1.5rem 0 1.5rem 3rem;
+    }
+
+    .holiday__heading,
+    .culture__heading {
         margin: 1rem 0 0;
     }
-    
+
+    /* slider styles */
+    .swiper-slide {
+        height: 480px;
+    }
+
+    .swiper-slide .read-more {
+        margin-bottom: 30px;
+        font-size: .875rem;
+    }
 }
